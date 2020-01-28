@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activity.ThongKeActivity">
+    <TextView
+        android:background="#00FF0C"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:text="Hôm nay: "
+        android:textColor="#0091FD"
+        android:textSize="20dp"
+        android:id="@+id/tvhomnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textStyle="bold"
+        android:text="Tháng nay: "
+        android:textColor="#0091FD"
+        android:textSize="20dp"
+        android:id="@+id/tvthangnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textStyle="bold"
+        android:text="Năm nay: "
+        android:textColor="#0091FD"
+        android:textSize="20dp"
+        android:id="@+id/tvnamnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="#00FF0C"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/chongay"
+        android:onClick="chonngay"
+        android:textColor="#FFFFFF"
+        android:background="#0080E9"
+        android:text="Chọn ngày"
+        android:layout_width="100dp"
+        android:layout_height="30dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Tổng tiền: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FC0303"
+            android:id="@+id/tongtien"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:text="Số lượng sách: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#FC0303"
+            android:id="@+id/soluong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:background="#B1FF04"
+        android:onClick="bieudo"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Biểu đồ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

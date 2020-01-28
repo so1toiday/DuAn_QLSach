@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/hdicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="sach"
+            android:id="@+id/sach"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:id="@+id/soluong"
+            android:text="soluong"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="#f00"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:id="@+id/tien"
+            android:text="tien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

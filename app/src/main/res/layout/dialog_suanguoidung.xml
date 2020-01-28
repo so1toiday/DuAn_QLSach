@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp">
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:editable="false"
+        android:id="@+id/edUserName"
+        android:layout_marginBottom="8dp"
+        android:hint="Tài Khoản"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edPassWord"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"
+        android:hint="Mật Khẩu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edFullName"
+        android:layout_marginBottom="8dp"
+        android:hint="Họ Và Tên"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edSDT"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"
+        android:hint="SĐT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_marginBottom="8dp"
+        android:hint="Địa Chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnThem"
+            android:text="Sửa"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnHuy"
+            android:text="Hủy"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

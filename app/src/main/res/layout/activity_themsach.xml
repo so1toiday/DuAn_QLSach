@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    tools:context=".Activity.ThemSachActivity">
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/masach"
+        android:layout_marginBottom="8dp"
+        android:hint="Mã sách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:background="#FC0A59"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/sp_theloai"
+            android:layout_width="270dp"
+            android:layout_height="48dp"/>
+        <ImageView
+            android:onClick="themtheloai"
+            android:src="@drawable/button_plus_green"
+            android:layout_width="48dp"
+            android:layout_height="48dp"></ImageView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tensach"
+        android:layout_marginBottom="8dp"
+        android:hint="Tên sách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/tacgia"
+        android:layout_marginBottom="8dp"
+        android:hint="Tác giả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/nxb"
+        android:layout_marginBottom="8dp"
+        android:hint="NXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/gia"
+        android:layout_marginBottom="8dp"
+        android:hint="Giá"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/soluong"
+        android:layout_marginBottom="8dp"
+        android:hint="Số lượng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="them"
+            android:text="Thêm"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Hủy"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:onClick="show"
+        android:text="Show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
